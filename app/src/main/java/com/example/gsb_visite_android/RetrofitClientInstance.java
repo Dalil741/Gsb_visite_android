@@ -1,3 +1,5 @@
+package com.example.gsb_visite_android;
+
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 

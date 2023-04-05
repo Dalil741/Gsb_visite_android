@@ -1,6 +1,9 @@
+package com.example.gsb_visite_android;
+
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class User implements Serializable {
@@ -23,7 +26,7 @@ public class User implements Serializable {
     @SerializedName("dateEmbauche")
     private Date date_embauche;
 
-
+    ArrayList<Praticien> praticiens;
 
     public User(String id, String password){
     this.username = username;

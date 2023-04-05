@@ -1,3 +1,7 @@
+package com.example.gsb_visite_android;
+
+import com.google.gson.annotations.SerializedName;
+
 import java.io.Serializable;
 
 public class Praticien implements Serializable{
@@ -59,11 +63,17 @@ public class Praticien implements Serializable{
     }
 
     private int id;
+    @SerializedName("nom")
     private String nom;
+    @SerializedName("prenom")
     private String prenom;
+    @SerializedName("diplome")
     private String diplome;
+    @SerializedName("tel")
     private String tel;
+    @SerializedName("praCoefnotoriete ")
     private int pra_coefnotoriete;
+    @SerializedName("mail")
     private String mail;
 
     public Praticien(int id, String nom, String prenom, String diplome, String tel, int pra_coefnotoriete, String mail) {
