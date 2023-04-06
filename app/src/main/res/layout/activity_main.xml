@@ -32,7 +32,6 @@
         android:gravity="center"
         android:hint="password"
         android:maxLines="1"
-        android:password="false"
         tools:layout_editor_absoluteX="86dp"
         tools:layout_editor_absoluteY="1dp"/>
 
