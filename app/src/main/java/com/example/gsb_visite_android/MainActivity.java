@@ -7,6 +7,8 @@ import android.view.View;
 import com.example.gsb_visite_android.databinding.ActivityMainBinding;
 
 import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -23,9 +25,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 GsbServices services = RetrofitClientInstance.getRetrofitInstance().create(GsbServices.class);
                 Call<Token> call = services.getToken();
+                call.enqueue(new Callback<Token>() {
+                    @Override
+                    public void onResponse(Call<Token> call, Response<Token> response) {
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<Token> call, Throwable t) {
+
+                    }
 
 
-            }
+
+
         });
     }
 

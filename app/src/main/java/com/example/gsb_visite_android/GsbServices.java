@@ -9,6 +9,6 @@ public interface GsbServices {
     @POST("/login_check")
     Call<Token> getToken (@Body User user) ;
 
-    @GET("/users")
-    Call<User>  ;
+   // @GET("/users")
+   // Call<User>  ;
 }
