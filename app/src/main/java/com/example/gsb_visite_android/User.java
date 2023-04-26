@@ -28,7 +28,7 @@ public class User implements Serializable {
 
     ArrayList<Praticien> praticiens;
 
-    public User(String id, String password){
+    public User(String username, String password){
     this.username = username;
     this.password = password;
     }

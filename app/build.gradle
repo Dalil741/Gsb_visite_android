@@ -3,10 +3,8 @@ plugins {
 }
 
 android {
-    compileSdk 32
-    buildFeatures {
-        viewBinding true
-    }
+    compileSdk 33
+
 
     defaultConfig {
         applicationId "com.example.gsb_visite_android"
@@ -27,6 +25,9 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
     }
 }
 
