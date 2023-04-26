@@ -7,9 +7,9 @@ import retrofit2.http.Header;
 import retrofit2.http.POST;
 
 public interface GsbServices {
-    @POST("/login_check")
+    @POST("login_check")
     Call<Token> getToken (@Body User user) ;
 
-    @GET("/users")
+    @GET("users")
     Call<User> getUsers (@Header("Authorization") String authorization) ;
 }
