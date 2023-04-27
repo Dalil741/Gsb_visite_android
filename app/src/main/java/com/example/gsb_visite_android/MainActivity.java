@@ -41,10 +41,12 @@ public class MainActivity extends AppCompatActivity {
                     public void onResponse(Call<Token> call, Response<Token>
                             response) {
                        token = response.body();
-                       // Intent intent = new Intent(MainActivity.this, VisiteurActivity.class);
-                       // intent.putExtra("username", username);
-                        // intent.putExtra("token", token);
-                        // startActivity(intent);
+                       Intent intent = new Intent(MainActivity.this, VisiteurActivity.class);
+                       intent.putExtra("username", username );
+                       intent.putExtra("token", token);
+                       startActivity(intent);
+
+
                     }
                     @Override
                     public void onFailure(Call<Token> call, Throwable t) {
